@@ -4,7 +4,7 @@
   class Movie {
     public $name;
     public $director;
-    public $releaseDate;
+    public $releaseDate ;
     public $genre;
     public $runningTime;
     private $mainActor;
