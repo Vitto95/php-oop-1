@@ -39,24 +39,6 @@ $movies = array($movieOne, $movieTwo);
   <h1>Movies</h1>
   <h2>Risultati Ottenuti: <?php echo Movie::getCounter() ?></h2>
 
-  <h2>Film 1</h2>
-  <p>Titolo: <?php echo $movieOne->name ?></p>
-  <p>Regista: <?php echo $movieOne->director ?></p>
-  <p>Genere: <?php echo $movieOne->genre ?></p>
-  <p>Anno di uscita: <?php echo $movieOne->releaseDate ?></p>
-  <p>Durata: <?php echo $movieOne->runningTime ?></p>
-  <p>Starring: <?php echo $movieOne->getMainActor() ?></p>
-
-  <h2>Film 2</h2>
-  <p>Titolo: <?php echo $movieTwo->name ?></p>
-  <p>Regista: <?php echo $movieTwo->director ?></p>
-  <p>Genere: <?php echo $movieTwo->genre ?></p>
-  <p>Anno di uscita: <?php echo $movieTwo->releaseDate ?></p>
-  <p>Durata: <?php echo $movieTwo->runningTime ?></p>
-  <p>Starring: <?php echo $movieTwo->getMainActor() ?></p>
-
-  <p>***********************************************************************</p>
-
   <?php foreach($movies as $index => $movie){ ?>
 
   <h2>Film <?php echo ($index + 1) ?></h2>
